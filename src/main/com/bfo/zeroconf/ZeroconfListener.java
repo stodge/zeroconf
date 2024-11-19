@@ -30,7 +30,7 @@ public interface ZeroconfListener {
     public default void packetError(Packet packet, String message) {}
 
     /**
-     * Called when the Zeroconf class detects a network topology change on an interdace
+     * Called when the Zeroconf class detects a network topology change on an interface
      * @param nic the NIC
      */
     public default void topologyChange(NetworkInterface nic) {}
@@ -74,7 +74,7 @@ public interface ZeroconfListener {
     public default void serviceModified(Service service) {}
 
     /**
-     * Called when the Zeroconf class exoires a service name that was previously announced.
+     * Called when the Zeroconf class expires a service name that was previously announced.
      * @param service the service
      */
     public default void serviceExpired(Service service) {}
